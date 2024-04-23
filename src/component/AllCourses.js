@@ -52,7 +52,7 @@ const AllCourses = () => {
                 Price: <span className="text-slate-400">{course.price}</span>
               </p>
               <p className="text-2xl font-medium flex justify-center">
-                <button className="btn px-1 w-[70%] md:w-fit">
+                <button className=" bg-slate-700 px-2 py-1  w-[70%] md:w-fit">
                   View all Students
                 </button>
               </p>

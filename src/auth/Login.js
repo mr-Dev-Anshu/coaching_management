@@ -5,13 +5,12 @@ import { AuthContext } from "../context/Auth.context";
 export default function Login() {
   const navigate = useNavigate();
   const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [verifyPage, setVerifyPage] = useState(true);
+
   const { loginWithPhone } = useContext(AuthContext);
   const [loading, setLoading] = useState(false);
   const handleLogin = async (e) => {
     setLoading(true);
-    setMessage("");
+    
     e.preventDefault();
     try {
       if (phone === "" || phone == null) {
@@ -24,7 +23,6 @@ export default function Login() {
       navigate("/verify");
     } catch (error) {
       console.error("Error setting up reCAPTCHA:", error);
-      setMessage(error?.message);
       setLoading(false);
     }
   };

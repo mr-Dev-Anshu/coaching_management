@@ -28,7 +28,7 @@ const AllCourses = () => {
       {user ? (
         <div className="md:flex md:flex-row flex flex-col  md:gap-4 md:flex-wrap md:justify-center justify-center items-center  space-y-4 ">
          
-          {courses.map((course) => (
+          { courses ? courses.map((course) => (
             <div
               key={course.id}
               className="w-[90%] outline md:w-[20%] p-6 bg-white shadow-xl border-none rounded-lg h-[350px] "
@@ -57,7 +57,7 @@ const AllCourses = () => {
                 </button>
               </p>
             </div>
-          ))}
+          )) : <div className="flex justify-center items-center h-screen text-green-500 text-4xl"> Please Wait </div>}
         </div>
       ) : (
         <div>

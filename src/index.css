@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+   @apply  bg-slate-700 py-2 md:px-12  rounded-md text-white mt-6
+}
+
+
+.input{
+   @apply border-b-4 border-slate-700 px-4 py-2  focus:outline-none text-xl   w-[80%]   placeholder:text-xl mt-4  
+}

@@ -20,9 +20,8 @@ const AllCourses = () => {
   };
 
   useEffect(() => {
-    // Fetch courses when component mounts
     getCourses();
-  }, []);
+  }, [user]);
 
   return (
     <div>

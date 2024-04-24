@@ -31,7 +31,7 @@ const Verify = () => {
         </p>
         <div className="flex flex-col   justify-center h-[400px] items-center  ">
           <input
-            placeholder=" Enter the Phone Number "
+            placeholder=" Enter the Otp  Number "
             onChange={(e) => setOtp(e.target.value)}
             className="border-b-4 border-slate-700 md:px-12 py-2 px-2   focus:outline-none text-xl   w-[80%]   placeholder:text-xl md:w-[600px]"
             type="text"

@@ -16,7 +16,6 @@ export const CoursesContextProvider = ({ children }) => {
       newData.push(doc.data());
     });
     setCourses(newData);
-    console.log(newData);
   };
   useEffect(() => {
     if (user) {

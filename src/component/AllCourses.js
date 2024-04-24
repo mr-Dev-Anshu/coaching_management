@@ -1,27 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { AuthContext } from "../context/Auth.context";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../config/firebase.config";
 import Login from "../auth/Login";
-
+import { coursesContext } from "../context/Courses.context";
 const AllCourses = () => {
   const { user } = useContext(AuthContext);
-  const [courses, setCourses] = useState([]);
-
-  const getCourses = async () => {
-    const dataSnap = await getDocs(collection(db, "courses"));
-    let newData = [];
-    dataSnap.forEach((doc) => {
-      newData.push(doc.data());
-    });
-    setCourses(newData);
-    console.log(newData);
-  };
-
-  useEffect(() => {
-    getCourses();
-  }, [user]);
-
+  const { courses } = useContext(coursesContext);
+  console.log(courses);
   return (
     <div>
       {user ? (

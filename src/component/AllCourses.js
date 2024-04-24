@@ -30,27 +30,27 @@ const AllCourses = () => {
             courses.map((course) => (
               <div
                 key={course.id}
-                className="w-[90%] outline md:w-[20%] p-6 bg-white shadow-xl border-none rounded-lg min-h-[350px] "
+                className="w-[90%] outline md:w-[20%] p-6 bg-white shadow-xl border-none rounded-lg min-h-[350px] max-h-[350px] "
               >
                 <p className="text-4xl  text-slate-700  flex justify-center font-bold ">
                   {course.name}
                 </p>
-                <p className="text-2xl text-slate-400  font-medium mt-2 flex justify-center">
+                <p className="text-xl text-slate-400  font-medium mt-2 flex justify-center">
                   Teacher: {course.teacher}
                 </p>
-                <p className="text-2xl text-slate-400  font-medium mt-2 flex justify-center">
+                <p className="text-xl text-slate-400  font-medium mt-2 flex justify-center">
                   Duration: {course.duration}
                 </p>
-                <p className="text-2xl  text-slate-400 font-medium mt-2 flex justify-center">
+                <p className="text-xl  text-slate-400 font-medium mt-2 flex justify-center">
                   Schedule: {course.schedule}
                 </p>
-                <p className="text-2xl  text-slate-400 font-medium mt-2 flex justify-center">
+                <p className="text-xl  text-slate-400 font-medium mt-2 flex justify-center">
                   Code : {course.code}
                 </p>
-                <p className="text-2xl text-slate-400  font-medium mt-2 flex justify-center">
+                <p className="text-xl text-slate-400  font-medium mt-2 flex justify-center">
                   Price: <span className="text-slate-400">{course.price}</span>
                 </p>
-                <p className="text-2xl font-medium flex justify-center">
+                <p className="text-xl font-medium flex justify-center">
                   <button className=" bg-slate-700 px-4 py-2 text-white  w-[80%]   md:w-fit md:mt-3 rounded ">
                     View all Students
                   </button>

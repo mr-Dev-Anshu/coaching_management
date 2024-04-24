@@ -7,7 +7,7 @@ import AddCourse  from "./component/AddCourse";
 import AllCourses from "./component/AllCourses";
 function App() {
   return (
-    <div className="">
+    <div className="mb-6">
       <Header />
 
       <Routes>

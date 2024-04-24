@@ -26,23 +26,23 @@ const Verify = () => {
   return (
     <div>
       <div>
-        <p className="text-xl text-center mt-4  text-slate-700 font-bold ">
+        <p className="text-xl md:text-4xl  text-center mt-4  text-slate-700 font-bold">
           Verify the Otp
         </p>
         <div className="flex flex-col   justify-center h-[400px] items-center  ">
           <input
             placeholder=" Enter the Phone Number "
             onChange={(e) => setOtp(e.target.value)}
-            className="border-b-4 border-slate-700 px-2 py-2  focus:outline-none text-xl   w-[80%]   placeholder:text-xl"
+            className="border-b-4 border-slate-700 md:px-12 py-2 px-2   focus:outline-none text-xl   w-[80%]   placeholder:text-xl md:w-[600px]"
             type="text"
           />
           <div id="recaptcha-container"></div>
           <button
             onClick={handleVerification}
-            className="bg-slate-700 py-2 px-12  rounded-md text-white mt-6   "
+            className="bg-slate-700 py-2 px-12  md:w-[20%] md:text-2xl  rounded-md text-white mt-6 "
           >
             {" "}
-            {loading ? "Loading..." : "Get Otp"}{" "}
+            {loading ? "Loading..." : "Verify Otp "}{" "}
           </button>
         </div>
       </div>

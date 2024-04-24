@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Login from "../auth/Login";
 import { AuthContext } from "../context/Auth.context";
 import { Link } from "react-router-dom";
@@ -8,7 +8,6 @@ import { auth } from "../config/firebase.config";
 const Home = () => {
   const { user } = useContext(AuthContext);
   console.log(user);
-  const [loading , setLoading ]  = useState(false) ; 
 
      const handleLogout = async () => {
          await  signOut(auth)

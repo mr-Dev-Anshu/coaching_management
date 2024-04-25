@@ -1,12 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../context/Auth.context";
 import Login from "../auth/Login";
 import { coursesContext } from "../context/Courses.context";
 import { Link } from "react-router-dom";
 const AllCourses = () => {
   const { user } = useContext(AuthContext);
-  const { courses } = useContext(coursesContext);
+  const { courses , getCourseData } = useContext(coursesContext);
   console.log(courses);
+  useEffect(()=> {
+    getCourseData()
+  } ) 
   return (
     <div>
       {user ? (

@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./component/Home";
 import Header from "./component/Header";
-import Login from "./auth/Login";
-import Verify from "./auth/Verify";
 import AddCourse  from "./component/AddCourse";
 import AllCourses from "./component/AllCourses";
 import AddStudent from "./component/AddStudent";
 import AllStudents from "./component/AllStudents";
+import Login from "./auth/Login";
 function App() {
   return (
     <div className="mb-6">
@@ -14,8 +13,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Verify" element={<Verify />} />
+        <Route path="/login" element={< Login
+         />} />
         <Route path="/addcourse" element={<AddCourse />} />
         <Route path="/allcourses" element={<AllCourses />} />
         <Route path="/addstudent" element={<AddStudent />} />

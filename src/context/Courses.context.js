@@ -23,7 +23,7 @@ export const CoursesContextProvider = ({ children }) => {
     }
   }, [user]);
   return (
-    <coursesContext.Provider value={{ courses }}>
+    <coursesContext.Provider value={{ courses , getCourseData  }}>
       {children}
     </coursesContext.Provider>
   );

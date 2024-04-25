@@ -14,7 +14,7 @@ const Header = () => {
           </Link>
 
           {user ? (
-            <li>{user.phoneNumber}</li>
+            <li>{user.userid}</li>
           ) : (
             <Link to={"/login"}>
               <li>Login</li>
